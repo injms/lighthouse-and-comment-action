@@ -33,6 +33,12 @@ paths: '["/", "/about", "/contact"]'
 
 This will default to `'["/"]'`.
 
+### `github_token`
+
+**Required**
+
+Set to `${{ secrets.GITHUB_TOKEN }}`.
+
 ## Outputs
 
 No outputs directly from the action.
@@ -60,9 +66,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Audit live URL
-        uses: injms/lighthouse-and-comment@v1
+        uses: injms/lighthouse-and-comment-action@v1
         with:
           live_url: "https://inj.ms"
           pr_url_pattern: "https://deploy-preview-{{PULL_REQUEST_NUMBER}}--injms.netlify.app"
           pages: "['/', '/about' '/contact']"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
