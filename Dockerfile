@@ -13,4 +13,8 @@ COPY initialise.js /initialise.js
 COPY comment.js /comment.js
 COPY upload-results-to-artifact.js /upload-results-to-artifact.js
 
+COPY entrypoint.sh /entrypoint.sh
+
 RUN npm ci
+
+ENTRYPOINT ["/entrypoint.sh"]
