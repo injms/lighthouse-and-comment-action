@@ -11,5 +11,6 @@ COPY modules/ /modules/
 
 COPY initialise.js /initialise.js
 COPY comment.js /comment.js
+COPY upload-results-to-artifact.js /upload-results-to-artifact.js
 
 RUN npm ci
