@@ -1,0 +1,27 @@
+name: Lighthouse audit - compare and comment
+author: Ian James
+description: Runs Lighthouse audit, compares pull request against the live site, and gives you the results.
+inputs:
+  live_url:
+    description: The URL of the live site.
+    required: true
+  pr_url_pattern:
+    description: The pattern of the site that’s created from a pull request.
+    required: true
+  pages:
+    description: An stringified array of paths for the different pages to be audited. Defaults to root.
+    default: '["/"]'
+  github_token:
+    description: Github Token
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.live_url }}
+    - ${{ inputs.pr_url_pattern }}
+    - ${{ inputs.pages }}
+    - ${{ inputs.github_token }}
+branding:
+  color: orange
+  icon: bar-chart-2
