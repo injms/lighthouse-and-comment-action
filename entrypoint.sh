@@ -13,3 +13,4 @@ node /initialise.js --paths $INPUT_PAGES --pr_url_pattern $INPUT_PR_URL_PATTERN 
 
 npx lighthouse-batch --file "/urls.txt" --out "/lighthouse" --html
 
+node /comment.js --repo $GITHUB_REPOSITORY --github_event_path $GITHUB_EVENT_PATH

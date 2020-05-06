@@ -8,6 +8,8 @@ COPY package.json /package.json
 COPY package-lock.json /package-lock.json
 
 COPY modules/ /modules/
+
 COPY initialise.js /initialise.js
+COPY comment.js /comment.js
 
 RUN npm ci
