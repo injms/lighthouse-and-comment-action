@@ -1,0 +1,21 @@
+{
+  "name": "lighthouse-and-comment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./entrypoint.sh",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Ian James, https://inj.ms",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/artifact": "^0.3.1",
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.1.1",
+    "argh": "^1.0.0",
+    "lighthouse-batch": "^5.0.2"
+  },
+  "devDependencies": {
+    "jasmine": "^3.5.0"
+  }
+}
