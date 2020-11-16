@@ -16,6 +16,6 @@
     "lighthouse-batch": "^5.0.2"
   },
   "devDependencies": {
-    "jasmine": "^3.5.0"
+    "jasmine": "^3.6.3"
   }
 }
