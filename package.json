@@ -13,7 +13,7 @@
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
     "argh": "^1.0.0",
-    "lighthouse-batch": "^5.0.2"
+    "lighthouse-batch": "^6.0.0"
   },
   "devDependencies": {
     "jasmine": "^3.5.0"
