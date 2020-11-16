@@ -1,7 +1,6 @@
 const pc2dp = require('./pc2dp')
 const capitalise = require('./capitalise')
 
-Number.prototype.pc2dp = pc2dp
 String.prototype.capitalise = capitalise
 
 const joinSummaryAndURLs = ({ urls, summary: summaries }) => {
@@ -35,8 +34,8 @@ const createTable = ({page, prSummary, liveSummary}) => {
 
   for (let key in liveDetails) {
     if (liveDetails.hasOwnProperty(key) && prDetails.hasOwnProperty(key)) {
-      const liveScore = liveDetails[key].pc2dp()
-      const prScore = prDetails[key].pc2dp()
+      const liveScore = pc2dp(liveDetails[key])
+      const prScore = pc2dp(prDetails[key])
       const difference = (prScore - liveScore)
       const symbol = difference < 0 ? "❌" : "✅"
       const pn = difference > 0 ? "+" : ""
