@@ -4,7 +4,7 @@ const core = require('@actions/core')
 const postComment = ({ owner, repo, pullRequestNumber, commentText }) => {
 
   const githubToken = core.getInput('github_token')
-  const octokit = new github.GitHub(githubToken)
+  const octokit = github.getOctokit(githubToken)
 
   try {
     octokit.issues.createComment({
