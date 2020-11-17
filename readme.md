@@ -66,7 +66,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Audit live URL
-        uses: injms/lighthouse-and-comment-action@v1
+        uses: injms/lighthouse-and-comment-action@v1.1.0
         with:
           live_url: "https://inj.ms"
           pr_url_pattern: "https://deploy-preview-{{PULL_REQUEST_NUMBER}}--injms.netlify.app"
