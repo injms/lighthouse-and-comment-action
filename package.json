@@ -9,7 +9,7 @@
   "author": "Ian James, https://inj.ms",
   "license": "MIT",
   "dependencies": {
-    "@actions/artifact": "^0.4.1",
+    "@actions/artifact": "^0.4.2",
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
     "argh": "^1.0.0",
