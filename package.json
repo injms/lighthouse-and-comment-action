@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/artifact": "^0.5.1",
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.2.7",
     "@actions/github": "^4.0.0",
     "argh": "^1.0.0",
     "lighthouse-batch": "^7.1.0"
