@@ -15,6 +15,8 @@ COPY upload-results-to-artifact.js /upload-results-to-artifact.js
 
 COPY entrypoint.sh /entrypoint.sh
 
+COPY lighthouseConfig.js /lighthouseConfig.js
+
 RUN npm ci
 
 ENTRYPOINT ["/entrypoint.sh"]

@@ -11,7 +11,7 @@ fi
 
 node /initialise.js --paths $INPUT_PAGES --pr_url_pattern $INPUT_PR_URL_PATTERN --live_url $INPUT_LIVE_URL --github_event_path $GITHUB_EVENT_PATH
 
-npx lighthouse-batch --file "/urls.txt" --out "/lighthouse" --html
+npx lighthouse-batch --file "/urls.txt" --out "/lighthouse" --html --params "--config-path=/lighthouseConfig.js"
 
 node /comment.js --repo $GITHUB_REPOSITORY --github_event_path $GITHUB_EVENT_PATH
 
