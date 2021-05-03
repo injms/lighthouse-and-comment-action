@@ -1,3 +1,11 @@
+# 🗄 Archived - this action is no longer maintained
+
+I think this was a neat idea, but just too flakey for real life as it required a third party to be up and running by the time the audit was being run. And it was just too soul destroying when bug fixing to have to run the action on GitHub every single time - if there's a better way please please let me know.
+
+Ta.
+
+---
+
 # Lighthouse audit to compare live and pull request
 
 This runs a Lighthouse audit on the live site and on the pull request deploy - then make a comment with the difference between the two so you can better show what improvements you're making.
